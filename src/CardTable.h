@@ -3,9 +3,10 @@
 
 #include "Card.h"
 
+typedef std::pair<bool, std::vector<int>> CardType;
+
 class CardTable {
-public:
-    typedef std::pair<bool, std::vector<int>> CardType;
+public:    
     CardTable();
     int add_card(Card card);
     CardType isStraightFlush();
