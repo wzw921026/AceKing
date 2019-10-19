@@ -11,6 +11,5 @@ public:
 
 private:
     std::vector<int> num_cnt;
-    // std::vector<int> col_cnt;
     std::vector<std::vector<int>> col_rec;
 };

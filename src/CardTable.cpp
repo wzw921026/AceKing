@@ -1,19 +1,12 @@
 #include "CardTable.h"
 
 CardTable::CardTable() {
-    for (int i = 0; i <= 14; ++i)
-        num_cnt.push_back(0);
-    // for (int i = 0; i < 4; ++i) {
-    //     col_cnt.push_back(0);
-    // }
-    for (int i = 0; i < 4; ++i) {
-        col_rec.push_back(std::vector());
-    }
+    num_cnt.resize(15);
+    col_rec.resize(4);
 }
 
 int CardTable::add_card(Card card) {
     ++ num_cnt[card.num];
-    // ++ col_cnt[card.col];
     col_rec[card.col].push_back(card.num);
 }
 

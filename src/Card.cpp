@@ -5,7 +5,7 @@ Card::Card(const char* ch) {
     if (s.size() != 2)
         return;
 
-    char c = s[1].tolower();
+    char c = tolower(s[1]);
     if (c == 's') {
         col = 0;
     }
@@ -22,7 +22,7 @@ Card::Card(const char* ch) {
         return;
     }
 
-    c = s[0].toupper();
+    c = toupper(s[0]);
     if (c == 'A') {
         num = 14;
     }
