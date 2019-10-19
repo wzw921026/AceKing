@@ -15,5 +15,13 @@ int main() {
     card_table.add_card("Qd");
     card_table.add_card("Kd");
     card_table.add_card("Ad");
-    cout << card_table.isStraightFlush() << endl;
+    CardType card_type;
+    card_type = card_table.isStraightFlush();
+    if (card_type.first) {
+        cout << "isStraightFlush" << endl;
+    }
+    card_type = card_table.isFlush();
+    if (card_type.first) {
+        cout << "isFlush" << endl;
+    }
 }

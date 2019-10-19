@@ -165,6 +165,7 @@ CardType CardTable::isOnePair() {
 }
 
 CardType CardTable::isNoPair() {
+    std::vector<int> vec;
     for (int i = 14; i >= 2; --i) {
         if (num_cnt[i] > 0) {
             vec.push_back(i);
