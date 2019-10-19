@@ -5,11 +5,21 @@
 
 class CardTable {
 public:
+    typedef std::pair<bool, std::vector<int>> CardType;
     CardTable();
     int add_card(Card card);
-    int isStraightFlush();
+    CardType isStraightFlush();
+    CardType isFourOfAKind();
+    CardType isFullHouse();
+    CardType isFlush();
+    CardType isStraight();
+    CardType isThreeOfAKind();
+    CardType isTwoPairs();
+    CardType isOnePair();
+    CardType isNoPair();
 
 private:
     std::vector<int> num_cnt;
+    std::vector<int> col_cnt;
     std::vector<std::vector<int>> col_rec;
 };
