@@ -1,6 +1,7 @@
 #include "Card.h"
 
-Card::Card(std::string s) {
+Card::Card(const char* ch) {
+    std::string s(ch);
     if (s.size() != 2)
         return;
 

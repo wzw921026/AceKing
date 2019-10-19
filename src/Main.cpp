@@ -1,3 +1,6 @@
+#include <iostream>
+#include <cstdio>
+
 #include "CardTable.h"
 using namespace std;
 

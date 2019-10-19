@@ -1,4 +1,5 @@
 #include <vector>
+#include <algorithm>
 
 #include "Card.h"
 
@@ -6,7 +7,7 @@ class CardTable {
 public:
     CardTable();
     int add_card(Card card);
-    int CardTable::isStraightFlush();
+    int isStraightFlush();
 
 private:
     std::vector<int> num_cnt;
