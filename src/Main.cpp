@@ -5,6 +5,7 @@
 using namespace std;
 
 int main() {
+    CardTable card_table;
     card_table.add_card("2d");
     card_table.add_card("3d");
     card_table.add_card("4d");
