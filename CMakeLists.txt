@@ -5,7 +5,7 @@ IF(RELEASE_VERSION_MAJOR STREQUAL "6")
     set(CMAKE_CXX_COMPILER "/usr/local/gcc/bin/c++")
 ENDIF()
 
-project (test)
+project (ace)
 
 IF(NOT CMAKE_BUILD_TYPE)
    SET(CMAKE_BUILD_TYPE Release)
@@ -30,4 +30,4 @@ file(GLOB SOURCE_FILE
     "${SRC_ROOT}/*.cpp"
     )
 
-add_executable(test ${SOURCE_FILE})
+add_executable(ace ${SOURCE_FILE})
