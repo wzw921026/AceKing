@@ -38,7 +38,7 @@ Card::Card(std::string s) {
         num = 10;
     }
     else {
-        num = std::atoi(c);
+        num = c - '0';
     }
 
     if (num < 2)
